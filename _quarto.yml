@@ -1,23 +1,85 @@
 project:
   type: book
+  output-dir: docs
+  
+prefer-html: true
+
+# language: 
 
 book:
-  title: "lumens-book"
-  author: "Norah Jones"
-  date: "9/5/2024"
+  title: "LUMENS Help Guide"
+  author: 
+    - name: Alfa Nugraha
+      email: a.nugraha@cifor-icraf.org
+      affiliations:
+      - name: CIFOR-ICRAF
+    - name: Dony Indiarto
+      email: d.indiarto@cifor-icraf.org
+    - name: Yumna Karimah
+      email: y.karimah@cifor-icraf.org
+    - name: Faza Iza Mahezs
+      email: f.mahezs@cifor-icraf.org
+    - name: Andree Ekadinata
+      email: a.ekadinata@cifor-icraf.org
+  repo-url: https://github.com/icraf-indonesia/lumensbook
+  site-url: https://help.lumens.or.id
   chapters:
     - index.qmd
     - intro.qmd
+    - part: pur.qmd
+      chapters: 
+        - 01-build.qmd
+        - 02-reconcile.qmd
+    - part: ques.qmd
+      chapters: 
+        - 03-preques.qmd
+        - 04-carbon.qmd
+        - 05-biodiversity.qmd
+        - 06-hydrology.qmd
+    - part: ta.qmd
+      chapters: 
+        - 07-profitability.qmd
+        - 08-regional1.qmd
+        - 09-regional2.qmd
+    - part: sciendo.qmd
+      chapters: 
+        - 10-scenario.qmd
+        - 11-lucm.qmd
+    - 12-lasem.qmd
     - summary.qmd
+    
+  appendices: 
     - references.qmd
 
-bibliography: references.bib
+bibliography:
+  - references.bib
+  - book.bib
+  - packages.bib
+
+knitr:
+  opts_chunk: 
+    collapse: true
+    comment: "#" 
+    R.options:
+      knitr.graphics.auto_pdf: true
+      dplyr.print_min: 6
+      dplyr.print_max: 6
+      stars.crs: 17
+      digits: 3
 
 format:
   html:
+    number-depth: 3
     theme: cosmo
-  pdf:
-    documentclass: scrreprt
+    code-fold: false
+    code-summary: "Code"
+    code-tools: true
+    code-link: true
+    knitr:
+      opts_chunk:
+        out.width: 100%
+        R.options:
+          width: 68
 
 
 

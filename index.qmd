@@ -1,5 +1,12 @@
-# Preface {.unnumbered}
+# Preface {#sec-idx .unnumbered}
 
-This is a Quarto book.
+```{r}
+#| echo: false
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+source("common.R")
+```
+
+## In this book {#intro-outline}
+
+The first part of the book is all about giving you all the tools you need to start your package development journey and we highly recommend that you read it in order.
+We begin in @sec-biodiv with a run through the complete development of a small package.
