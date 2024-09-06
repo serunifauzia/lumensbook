@@ -24,10 +24,13 @@ jobs:
         with:
           r-version: '4.3.3'
           use-public-rspm: true
-      - run: R -q -e 'install.packages(c("knitr", "rmarkdown"))'    
-      - uses: r-lib/actions/setup-r-dependencies@v2
+      - run: R -q -e 'install.packages(c("knitr", "rmarkdown", "ggplot2"))'   
       
-
+      - uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+            extra-packages: any::rcmdcheck
+            needs: check
+      
       - name: Render book
         run: quarto render
         
