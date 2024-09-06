@@ -1,11 +1,11 @@
+# project information
 project:
   type: book
   output-dir: docs
   
 prefer-html: true
 
-# language: 
-
+# book options
 book:
   title: "LUMENS Help Guide"
   author: 
@@ -21,11 +21,20 @@ book:
       email: f.mahezs@cifor-icraf.org
     - name: Andree Ekadinata
       email: a.ekadinata@cifor-icraf.org
-  repo-url: https://github.com/icraf-indonesia/lumensbook
+  sidebar: 
+    style: floating
+    background: light
+    tools: 
+      - icon: globe
+        href: https://lumens.or.id
+      - icon: github
+        href: https://github.com/icraf-indonesia/lumensbook
+  # repo-url: https://github.com/icraf-indonesia/lumensbook
   site-url: https://help.lumens.or.id
   chapters:
     - index.qmd
     - intro.qmd
+    - text: "---"
     - part: pur.qmd
       chapters: 
         - 01-build.qmd
@@ -46,6 +55,7 @@ book:
         - 10-scenario.qmd
         - 11-lucm.qmd
     - 12-lasem.qmd
+    - text: "---"
     - summary.qmd
     
   appendices: 
