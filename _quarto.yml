@@ -8,6 +8,7 @@ prefer-html: true
 # book options
 book:
   title: "LUMENS Help Guide"
+  favicon: /media/favicon.ico
   author: 
     - name: Alfa Nugraha
       email: a.nugraha@cifor-icraf.org
@@ -24,13 +25,30 @@ book:
   sidebar: 
     style: floating
     background: light
+    logo: /media/logo-small.png
     tools: 
+      - icon: shuffle 
+        menu:
+          - text: English
+            href: https://help.lumens.or.id/en
+          - text: Bahasa
+            href: https://help.lumens.or.id/id
       - icon: globe
         href: https://lumens.or.id
       - icon: github
         href: https://github.com/icraf-indonesia/lumensbook
   # repo-url: https://github.com/icraf-indonesia/lumensbook
   site-url: https://help.lumens.or.id
+  repo-actions: [edit,issue]
+  page-footer:
+    left: |
+      Powered by [Quarto](https://quarto.org).
+    center: |
+      &copy; 2024 CIFOR-ICRAF.  
+      License: [CC BY NC SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0).
+    right: |
+       [<img src="/media/lumens-integrated-solutions.png" alt="R Consortium Logo" style="height:1.5em;"/>](https://lumens.or.id/).
+    border: true
   chapters:
     - index.qmd
     - intro.qmd
