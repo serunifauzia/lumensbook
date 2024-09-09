@@ -2,8 +2,6 @@ on:
   workflow_dispatch:
     branches: 
       - id_version
-    paths:
-      - 'id/**'
 
 name: manual render
 
@@ -27,12 +25,15 @@ jobs:
           r-version: '4.3.3'
           use-public-rspm: true
       
+      - name: Check dependencies
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
             packages: 
               any::knitr
               any::rmarkdown
               any::ggplot2
+              any::downlit
+              any::xml2
               
       - name: Render book
         run: quarto render
@@ -42,5 +43,6 @@ jobs:
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
+          path: id    
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
