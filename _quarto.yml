@@ -30,7 +30,7 @@ book:
       - icon: shuffle 
         menu:
           - text: English
-            href: https://help.lumens.or.id/en
+            href: https://help.lumens.or.id
           - text: Bahasa
             href: https://help.lumens.or.id/id
       - icon: globe
