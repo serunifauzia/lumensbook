@@ -5,15 +5,7 @@ project:
   
 prefer-html: true
 
-language:
-  section-title-appendices: "Lampiran"
-  section-title-references: "Referensi"
-  toc-title-document: "Daftar isi"
-  title-block-affiliation-single: "Afiliasi"
-  title-block-affiliation-plural: "Afiliasi"
-  crossref-fig-title: "Gambar"
-  crossref-tbl-title: "Tabel"
-  crossref-eq-prefix: "Persamaan"
+language: custom.yml
 
 # book options
 book:
