@@ -1,79 +1,92 @@
 # QUES-B {#sec-biodiv}
 
-## Overview
+## Ikhtisar
 
-QuES-B (Quantification of Environmental Services on Biodiversity) analyzes biodiversity conditions at the landscape scale, focusing on the composition and configuration of focal areas. This analysis is performed by calculating the Degree of Integration of Focal Area (DIFA) Index. This guide will help you prepare data, input it into the Shiny app, and interpret the results.
+QuES-B (Quantification of Environmental Services on Biodiversity) menganalisis kondisi keanekaragaman hayati pada skala lanskap, berfokus pada komposisi dan konfigurasi area fokus. Analisis ini dilakukan dengan menghitung Indeks Tingkat Integrasi Area Fokus (DIFA). Panduan ini akan membantu Anda menyiapkan data, memasukkannya ke dalam aplikasi Shiny, dan menafsirkan hasilnya.
 
-## Key Concepts:
+## Konsep Utama:
 
-1. **Focal Area**: Habitats of taxa of interest or areas with high biodiversity. Users define these by selecting specific land cover classes.
+1. **Area Fokus**: Habitat taksa yang diminati atau area dengan keanekaragaman hayati tinggi. Pengguna menentukan ini dengan memilih kelas penutup lahan tertentu.
 
-2. **TECI Map**: Illustrates the spatial distribution of focal area fragmentation and integration across the landscape by measuring contrast between adjacent land cover types.
+2. **Peta TECI**: Menggambarkan distribusi spasial fragmentasi dan integrasi area fokus di seluruh lanskap dengan mengukur kontras antara jenis penutup lahan yang berdekatan.
 
-3. **DIFA Index**: Quantifies how well integrated a focal area is within a landscape, indicating its capacity to conserve biodiversity.
+3. **Indeks DIFA**: Mengukur seberapa baik integrasi suatu area fokus dalam lanskap, menunjukkan kapasitasnya untuk melestarikan keanekaragaman hayati.
 
-## Data Preparation
+## Persiapan Data
 
-Before using the QuES-B Analysis tool, prepare the following:
+Sebelum menggunakan alat Analisis QuES-B, siapkan hal-hal berikut:
 
-1. **Land Cover Map**: A raster file of current land use/land cover (LULC) in GeoTIFF format.
-2. **Land Use/Cover & Focal Area Lookup Table**: A CSV file describing raster values with their corresponding land cover classes. Users define focal areas by selecting specific land cover classes.
-3. **Edge Contrast Table**: An FSQ file defining edge contrast between land cover types.
-4. (Optional) FRAGSTATS Configuration file.
+1. **Peta Penutup Lahan**: File raster penggunaan/penutup lahan (LULC) saat ini dalam format GeoTIFF.
+2. **Tabel Pencarian Penggunaan/Penutup Lahan & Area Fokus**: File CSV yang menjelaskan nilai raster dengan kelas penutup lahan yang sesuai. Pengguna menentukan area fokus dengan memilih kelas penutup lahan tertentu.
+3. **Tabel Kontras Tepi**: File FSQ yang menentukan kontras tepi antara jenis penutup lahan.
+4. (Opsional) File Konfigurasi FRAGSTATS.
 
-### Using the QuES-B Analysis Tool
+## Menggunakan Alat Analisis QuES-B
 
-Follow these steps to use the tool:
+Ikuti langkah-langkah berikut untuk menggunakan alat ini:
 
-1. **Land Cover**
-   - Click "Browse" and select your prepared land cover raster file. This must be in GeoTIFF format with the relevant UTM projection system.
+1. **Penutup Lahan**
 
-2. **Year**
-   - Enter the year of your land cover data (e.g., 2010). This must be numeric.
+   - Klik "Browse" dan pilih file raster penutup lahan yang telah Anda siapkan. Ini harus dalam format GeoTIFF dengan sistem proyeksi UTM yang relevan.
 
-3. **No Data Class**
-   - Enter the value representing missing land cover data in your raster, e.g., cloud or shadow (default is 0).
+2. **Tahun**
 
-4. **Land Use/Cover & Focal Area Lookup Table**
-   - Click "Browse" and select your prepared CSV file. Refer to the manual and example data for the correct column arrangement.
+   - Masukkan tahun data penutup lahan Anda (misalnya, 2010). Ini harus berupa angka.
 
-5. **Edge Contrast Table**
-   - Click "Browse" and select your prepared FSQ file. Refer to the manual and example data for the correct column arrangement.
+3. **Kelas Tanpa Data**
 
-6. **Sampling Points**
-   - Enter the number of sampling points (default is 1000). This is used to generate sampling grids for calculating DIFA. A higher number provides finer DIFA estimation but requires more computing time and resources.
+   - Masukkan nilai yang mewakili data penutup lahan yang hilang dalam raster Anda, misalnya, awan atau bayangan (default adalah 0).
+4. **Tabel Pencarian Penggunaan/Penutup Lahan & Area Fokus**
 
-7. **Window Size**
-   - Enter the size of the moving window for analysis in meters (default is 1000). Window size represents the dispersal radius, a threshold for ecological connectivity, assuming that taxa associated with the focal area can typically move or disperse up to this distance.
+   - Klik "Browse" dan pilih file CSV yang telah Anda siapkan. Lihat manual dan contoh data untuk pengaturan kolom yang benar.
+   
+5. **Tabel Kontras Tepi**
 
-8. **Window Shape**
-   - Select the shape of the moving window (default is Square). Circle shape is more realistic but requires more computing resources and time.
+   - Klik "Browse" dan pilih file FSQ yang telah Anda siapkan. Lihat manual dan contoh data untuk pengaturan kolom yang benar.
+   
+  
+6. **Titik Sampling**
 
-9. **FRAGSTATS Configuration**
-   - (Optional) Click "Browse" to select a FRAGSTATS configuration file. A default file will be used if not specified. Refer to the manual for further details.
+   - Masukkan jumlah titik sampling (default adalah 1000). Ini digunakan untuk menghasilkan grid sampling untuk menghitung DIFA. Jumlah yang lebih tinggi memberikan estimasi DIFA yang lebih baik tetapi membutuhkan lebih banyak waktu dan sumber daya komputasi.
 
-10. **FRAGSTATS Path**
-    - (Optional) Enter the path to your FRAGSTATS installation. Specify the path to the Fragstats directory installed on your PC if you used a custom installation directory. The default path will be used if not specified, assuming the default Fragstats installation directory.
+7. **Ukuran Jendela**
 
-11. **Output Directory**
-    - Click "Select Output Directory" to choose where results will be saved.
+   - Masukkan ukuran jendela bergerak untuk analisis dalam meter (default adalah 1000). Ukuran jendela mewakili radius penyebaran, ambang batas untuk konektivitas ekologis, dengan asumsi bahwa taksa yang terkait dengan area fokus biasanya dapat bergerak atau menyebar hingga jarak ini.
 
-12. **Run Analysis**
-    - Click "Run QuES-B Analysis" to start the process.
+8. **Bentuk Jendela**
 
-## Accessing Outputs
+   - Pilih bentuk jendela bergerak (default adalah Persegi). Bentuk lingkaran lebih realistis tetapi membutuhkan lebih banyak sumber daya dan waktu komputasi.
 
-After the analysis completes, you'll find the following in your selected output directory:
+9. **Konfigurasi FRAGSTATS**
 
-1. **Focal Area Map**: A binary raster map in GeoTIFF format derived from the land cover map, displaying the user-defined focal area classes represented as 1.
+   - (Opsional) Klik "Browse" untuk memilih file konfigurasi FRAGSTATS. File default akan digunakan jika tidak ditentukan. Lihat manual untuk detail lebih lanjut.
+   
+10. **Jalur FRAGSTATS**
 
-2. **TECI Map**: A raster map in GeoTIFF format illustrating the spatial distribution of focal area fragmentation and integration across the landscape. It measures the contrast between adjacent land cover types. Lower TECI values indicate well-integrated areas with minimal contrast between adjacent land cover types. Conversely, higher TECI values represent more segregated areas with greater contrast between neighboring land uses. Gray areas represent areas outside the dispersal threshold from the focal area.
+    - (Opsional) Masukkan jalur ke instalasi FRAGSTATS Anda. Tentukan jalur ke direktori Fragstats yang diinstal pada PC Anda jika Anda menggunakan direktori instalasi khusus. Jalur default akan digunakan jika tidak ditentukan, dengan asumsi direktori instalasi Fragstats default.
 
-3. **Sampling Grid**: A polygon shapefile of sampling grids used to extract values of TECI and focal area size.
+11. **Direktori Output**
 
-4. **DIFA Plot**: A plot illustrating the Degree of Integration of Focal Area (DIFA) Index, which measures how well integrated the focal habitat is within the landscape. The x-axis represents the Total Edge Contrast Index (TECI), while the y-axis shows the cumulative proportion of focal area. The curve depicts the relationship between habitat fragmentation (TECI) and habitat amount. The area under this curve determines the DIFA score, ranging from 0 to 100%. Higher scores indicate better habitat integration.
+    - Klik "Select Output Directory" untuk memilih tempat hasil akan disimpan.
 
-5. **QuES-B Report**: An overview of the analysis results in HTML format, providing detailed interpretations and visualizations of these outputs.
+12. **Jalankan Analisis**
+
+    - Klik "Run QuES-B Analysis" untuk memulai proses.
+
+
+## Mengakses Output
+
+Setelah analisis selesai, Anda akan menemukan hal-hal berikut di direktori output yang Anda pilih:
+
+1. **Peta Area Fokus**: Peta raster biner dalam format GeoTIFF yang berasal dari peta penutup lahan, menampilkan kelas area fokus yang ditentukan pengguna yang direpresentasikan sebagai 1.
+
+2. **Peta TECI**: Peta raster dalam format GeoTIFF yang menggambarkan distribusi spasial fragmentasi dan integrasi area fokus di seluruh lanskap. Ini mengukur kontras antara jenis penutup lahan yang berdekatan. Nilai TECI yang lebih rendah menunjukkan area yang terintegrasi dengan baik dengan kontras minimal antara jenis penutup lahan yang berdekatan. Sebaliknya, nilai TECI yang lebih tinggi mewakili area yang lebih terpisah dengan kontras yang lebih besar antara penggunaan lahan tetangga. Area abu-abu mewakili area di luar ambang penyebaran dari area fokus.
+
+4. **Grid Sampling**: Shapefile poligon dari grid sampling yang digunakan untuk mengekstrak nilai TECI dan ukuran area fokus.
+
+5. **Plot DIFA**: Plot yang menggambarkan Indeks Tingkat Integrasi Area Fokus (DIFA), yang mengukur seberapa baik integrasi habitat fokus dalam lanskap. Sumbu x mewakili Total Edge Contrast Index (TECI), sedangkan sumbu y menunjukkan proporsi kumulatif area fokus. Kurva menggambarkan hubungan antara fragmentasi habitat (TECI) dan jumlah habitat. Area di bawah kurva ini menentukan skor DIFA, berkisar dari 0 hingga 100%. Skor yang lebih tinggi menunjukkan integrasi habitat yang lebih baik.
+
+6. **Laporan QuES-B**: Ikhtisar hasil analisis dalam format HTML, memberikan interpretasi rinci dan visualisasi dari output ini.
 
 ---
 

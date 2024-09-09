@@ -1,13 +1,23 @@
 # project information
 project:
   type: book
-  output-dir: docs
+  output-dir: id
   
 prefer-html: true
 
+language:
+  section-title-appendices: "Lampiran"
+  section-title-references: "Referensi"
+  toc-title-document: "Daftar isi"
+  title-block-affiliation-single: "Afiliasi"
+  title-block-affiliation-plural: "Afiliasi"
+  crossref-fig-title: "Gambar"
+  crossref-tbl-title: "Tabel"
+  crossref-eq-prefix: "Persamaan"
+
 # book options
 book:
-  title: "LUMENS Help Guide"
+  title: "Panduan LUMENS"
   favicon: /media/favicon.ico
   author: 
     - name: Alfa Nugraha
@@ -30,24 +40,23 @@ book:
       - icon: shuffle 
         menu:
           - text: English
-            href: https://help.lumens.or.id/en
+            href: https://help.lumens.or.id
           - text: Bahasa
             href: https://help.lumens.or.id/id
       - icon: globe
         href: https://lumens.or.id
       - icon: github
         href: https://github.com/icraf-indonesia/lumensbook
-  # repo-url: https://github.com/icraf-indonesia/lumensbook
-  site-url: https://help.lumens.or.id
+  site-url: https://help.lumens.or.id/id
   repo-actions: [edit,issue]
   page-footer:
     left: |
-      Powered by [Quarto](https://quarto.org).
+      Didukung oleh [Quarto](https://quarto.org).
     center: |
       &copy; 2024 CIFOR-ICRAF.  
-      License: [CC BY NC SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0).
+      Lisensi: [CC BY NC SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0).
     right: |
-       [<img src="/media/lumens-integrated-solutions.png" alt="R Consortium Logo" style="height:1.5em;"/>](https://lumens.or.id/).
+       [<img src="/media/lumens-integrated-solutions.png" alt="LUMENS Logo" style="height:1.5em;"/>](https://lumens.or.id/).
     border: true
   chapters:
     - index.qmd
@@ -100,7 +109,7 @@ format:
     number-depth: 3
     theme: cosmo
     code-fold: false
-    code-summary: "Code"
+    code-summary: "Kode"
     code-tools: true
     code-link: true
     knitr:

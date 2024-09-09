@@ -1,4 +1,4 @@
-# Preface {#sec-idx .unnumbered}
+# Pendahuluan {#sec-idx .unnumbered}
 
 ```{r}
 #| echo: false
@@ -8,5 +8,5 @@ source("common.R")
 
 ## In this book {#intro-outline}
 
-The first part of the book is all about giving you all the tools you need to start your package development journey and we highly recommend that you read it in order.
-We begin in @sec-biodiv with a run through the complete development of a small package.
+Bagian pertama buku ini adalah pembahasan tentang semua alat bantu yang perlu diaturdan direkomendasikan agar dilakukan terlebih dahulu secara berurutan.
+Dimulai dengan mengeksekusi @sec-biodiv secara keseluruhan beserta paket lengkap pustaka yang diperlukan.
