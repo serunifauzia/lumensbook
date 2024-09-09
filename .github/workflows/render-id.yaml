@@ -48,10 +48,11 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           # Create a new branch from the existing one
-          git checkout -b gh-pages
+          git fetch origin gh-pages
+          git checkout gh-pages
           
           # Remove everything from the branch
-          # git rm -rf id/*
+          git rm -rf .
 
           # Copy the rendered files into the root of the branch
           cp -r id/* .
