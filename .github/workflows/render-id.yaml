@@ -51,10 +51,10 @@ jobs:
           git checkout -b gh-pages
           
           # Remove everything from the branch
-          git rm -rf id/*
+          # git rm -rf id/*
 
           # Copy the rendered files into the root of the branch
-          cp -r output/* .
+          cp -r id/* .
 
           # Commit and push the changes
           git add .
