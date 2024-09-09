@@ -1,7 +1,7 @@
 # project information
 project:
   type: book
-  output-dir: id
+  output-dir: docs
   
 prefer-html: true
 

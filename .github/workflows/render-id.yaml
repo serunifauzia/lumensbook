@@ -55,7 +55,7 @@ jobs:
           git rm -rf .
 
           # Copy the rendered files into the root of the branch
-          cp -r id/* .
+          cp -r docs/* .
 
           # Commit and push the changes
           git add .
