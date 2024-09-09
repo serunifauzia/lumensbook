@@ -55,9 +55,9 @@ jobs:
           git rm -rf .
 
           # Copy the rendered files into the root of the branch
-          cp -r docs/* .
+          # cp -r docs/* .
 
           # Commit and push the changes
-          git add docs
+          git add id
           git commit -m "Deploy rendered Quarto bookdown to gh-pages"
           git push --force origin gh-pages
