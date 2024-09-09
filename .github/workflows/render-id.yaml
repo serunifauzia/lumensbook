@@ -1,10 +1,9 @@
 on:
-  push:
+  workflow_dispatch:
     branches: 
       - id_version
-    workflow_dispatch:
 
-name: render-id
+name: manual render
 
 jobs:
   render-id:
