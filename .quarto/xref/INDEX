@@ -1,0 +1,62 @@
+{
+  "index.qmd": {
+    "index.html": "dc0d66c3"
+  },
+  "intro.qmd": {
+    "intro.html": "5e44e0c6"
+  },
+  "01-build.qmd": {
+    "01-build.html": "357fd192"
+  },
+  "02-reconcile.qmd": {
+    "02-reconcile.html": "cb0d21c3"
+  },
+  "03-preques.qmd": {
+    "03-preques.html": "d6cc036d"
+  },
+  "04-carbon.qmd": {
+    "04-carbon.html": "e047726a"
+  },
+  "05-biodiversity.qmd": {
+    "05-biodiversity.html": "e28c79a3"
+  },
+  "06-hydrology.qmd": {
+    "06-hydrology.html": "b1e7856e"
+  },
+  "07-profitability.qmd": {
+    "07-profitability.html": "1a9a15c0"
+  },
+  "08-regional1.qmd": {
+    "08-regional1.html": "962b2bff"
+  },
+  "09-regional2.qmd": {
+    "09-regional2.html": "c998dcee"
+  },
+  "10-scenario.qmd": {
+    "10-scenario.html": "6c244488"
+  },
+  "11-lucm.qmd": {
+    "11-lucm.html": "25d3b905"
+  },
+  "12-lasem.qmd": {
+    "12-lasem.html": "97e99c33"
+  },
+  "summary.qmd": {
+    "summary.html": "f945d856"
+  },
+  "references.qmd": {
+    "references.html": "f8c9bb26"
+  },
+  "pur.qmd": {
+    "pur.html": "eb4d3b25"
+  },
+  "ques.qmd": {
+    "ques.html": "bca458ef"
+  },
+  "ta.qmd": {
+    "ta.html": "4f9644a4"
+  },
+  "sciendo.qmd": {
+    "sciendo.html": "091f5706"
+  }
+}

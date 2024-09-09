@@ -1,1 +1,0 @@
-# Land Use Change Modelling using DINAMICA {#sec-lucm}
