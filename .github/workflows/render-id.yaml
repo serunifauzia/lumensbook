@@ -2,6 +2,8 @@ on:
   workflow_dispatch:
     branches: 
       - id_version
+    paths:
+      - 'id/**'
 
 name: manual render
 
@@ -40,6 +42,5 @@ jobs:
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
-          folder: id
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
