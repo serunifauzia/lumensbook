@@ -47,7 +47,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # Create a new branch from the existing one
+          # Checkout gh-pages branch
           git fetch origin gh-pages
           git checkout gh-pages
           
@@ -58,6 +58,6 @@ jobs:
           cp -r docs/* .
 
           # Commit and push the changes
-          git add .
+          git add docs
           git commit -m "Deploy rendered Quarto bookdown to gh-pages"
           git push --force origin gh-pages
