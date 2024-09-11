@@ -1,1 +1,1 @@
-# QUES-C {#sec-carbon}
+# Carbon stock dynamic {#sec-carbon}

@@ -1,4 +1,4 @@
-# QUES-B {#sec-biodiv}
+# Biodiversity {#sec-biodiv}
 
 ## Overview
 
