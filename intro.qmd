@@ -17,21 +17,22 @@ The tool incorporates a spatially-explicit, semi-agent-based model capable of ha
 
 LUMENS has been successfully applied in various landscapes across the globe, including Indonesia and Vietnam. It has facilitated the development of Green Growth Action Plans that promote sustainable economic development while safeguarding critical environmental services. LUMENS has also been instrumental in resolving land-use conflicts, enhancing community participation, and informing policy decisions.
 
-# The Core Principles 
+# The Core Principles
+
 LUMENS is built on three core principles that guide its approach to sustainable landscape management:
 
-1. **Inclusive**: LUMENS recognizes that effective land-use planning requires the active participation of all stakeholders. It fosters collaboration and ensures that diverse perspectives, including those of local communities, indigenous groups, and marginalized populations, are considered in decision-making. This inclusive approach helps build consensus and promotes equitable outcomes.
+1.  **Inclusive**: LUMENS recognizes that effective land-use planning requires the active participation of all stakeholders. It fosters collaboration and ensures that diverse perspectives, including those of local communities, indigenous groups, and marginalized populations, are considered in decision-making. This inclusive approach helps build consensus and promotes equitable outcomes.
 
-2. **Informed**: LUMENS emphasizes the importance of evidence-based decision-making. It utilizes scientific data, local knowledge, and scenario modeling to inform stakeholders about the potential impacts of different land-use options. This informed approach helps to minimize risks and maximize benefits for both people and the environment.
+2.  **Informed**: LUMENS emphasizes the importance of evidence-based decision-making. It utilizes scientific data, local knowledge, and scenario modeling to inform stakeholders about the potential impacts of different land-use options. This informed approach helps to minimize risks and maximize benefits for both people and the environment.
 
-3. **Integrative**: LUMENS breaks down silos by integrating various environmental services, such as carbon sequestration, biodiversity conservation, and water resource management, into a unified planning framework. It also connects land-use planning with broader development goals, ensuring that decisions are aligned with sustainable development objectives. This integrative approach promotes holistic and synergistic solutions that address the complex challenges of landscape management.
+3.  **Integrative**: LUMENS breaks down silos by integrating various environmental services, such as carbon sequestration, biodiversity conservation, and water resource management, into a unified planning framework. It also connects land-use planning with broader development goals, ensuring that decisions are aligned with sustainable development objectives. This integrative approach promotes holistic and synergistic solutions that address the complex challenges of landscape management.
 
 These three principles work together to empower stakeholders to make informed and inclusive decisions that balance economic development with environmental conservation. By fostering collaboration, utilizing scientific evidence, and integrating diverse perspectives, LUMENS paves the way for a more sustainable and equitable future for our landscapes.
 
 # The LUMENS Process
 
 LUMENS guides stakeholders through a seven-stage co-production process:
-  
+
 -   Scoping and Stakeholder Mapping: Identifying key stakeholders and their interests.
 -   Data Collection and Analysis: Gathering and analyzing spatial and socio-economic data.
 -   Planning Unit Reconciliation: Reconciling different perspectives on land use and zoning.
@@ -43,38 +44,39 @@ LUMENS guides stakeholders through a seven-stage co-production process:
 # Components of LUMENS
 
 LUMENS operates as both a **process** and a **tool**, facilitating the integration of diverse stakeholder perspectives and scientific data into land-use planning decisions. The primary components include:
-  
-  1.  [**Planning Unit Reconciliation (PUR)**](/pur.html): This module helps identify and resolve conflicts and inconsistencies in land use, tenure, and stakeholder perspectives. It enables the creation of reconciled planning units that serve as the foundation for subsequent analysis and negotiation.
-      -   **Purpose:** The PUR module facilitates the identification and resolution of conflicts and inconsistencies in land use, tenure, and stakeholder perspectives. It helps create a shared understanding of the landscape and its challenges.
-      -   **Process:** The module combines multiple layers of spatial and socio-economic data, including land allocations, permits, land suitability, and stakeholder perspectives. It then identifies areas of conflict or overlap and provides a platform for stakeholders to negotiate and reconcile these differences.
-      -   **Outcome:** The reconciled planning units serve as the foundation for subsequent analysis and negotiation, ensuring that land-use decisions are based on a shared understanding of the landscape and its complexities.
+
+1.  [**Planning Unit Reconciliation (PUR)**](/pur.html): This module helps identify and resolve conflicts and inconsistencies in land use, tenure, and stakeholder perspectives. It enables the creation of reconciled planning units that serve as the foundation for subsequent analysis and negotiation.
+    -   **Purpose:** The PUR module facilitates the identification and resolution of conflicts and inconsistencies in land use, tenure, and stakeholder perspectives. It helps create a shared understanding of the landscape and its challenges.
+    -   **Process:** The module combines multiple layers of spatial and socio-economic data, including land allocations, permits, land suitability, and stakeholder perspectives. It then identifies areas of conflict or overlap and provides a platform for stakeholders to negotiate and reconcile these differences.
+    -   **Outcome:** The reconciled planning units serve as the foundation for subsequent analysis and negotiation, ensuring that land-use decisions are based on a shared understanding of the landscape and its complexities.
 2.  [**Quantification of Environmental Services**](/ques.html): LUMENS assesses the impact of land-use change on various environmental services, such as carbon storage, biodiversity, and water resources. It utilizes established models like ABACUS, SWAT, and GenRiver to quantify these impacts.
-      -   **Purpose:** This component assesses the impact of land-use change on various environmental services, providing critical information for decision-making.
-      -   **Process:** LUMENS utilizes established models like ABACUS (for carbon storage), SWAT and GenRiver (for water resources), and DIFA (for biodiversity) to quantify the impacts of land-use change on these services.
-      -   **Outcome:** The quantification of environmental services enables stakeholders to understand the potential consequences of different land-use decisions and identify scenarios that minimize negative impacts and maximize benefits.
+    -   **Purpose:** This component assesses the impact of land-use change on various environmental services, providing critical information for decision-making.
+    -   **Process:** LUMENS utilizes established models like ABACUS (for carbon storage), SWAT and GenRiver (for water resources), and DIFA (for biodiversity) to quantify the impacts of land-use change on these services.
+    -   **Outcome:** The quantification of environmental services enables stakeholders to understand the potential consequences of different land-use decisions and identify scenarios that minimize negative impacts and maximize benefits.
 3.  [**Trade-off Analysis**](/ta.html): The tool enables the evaluation of trade-offs between different land-use scenarios, considering economic benefits, environmental impacts, and social implications. This helps stakeholders make informed decisions that balance competing objectives.
-      -   **Purpose:** This component helps stakeholders evaluate the trade-offs between different land-use scenarios, considering economic, environmental, and social factors.
-      -   **Process:** LUMENS compares the outcomes of different scenarios in terms of economic benefits (e.g., land-use profitability), environmental impacts (e.g., carbon emissions, biodiversity loss), and social implications (e.g., employment, food security).
-      -   **Outcome:** The trade-off analysis provides stakeholders with a comprehensive understanding of the potential consequences of different decisions, enabling them to identify solutions that balance competing objectives.
+    -   **Purpose:** This component helps stakeholders evaluate the trade-offs between different land-use scenarios, considering economic, environmental, and social factors.
+    -   **Process:** LUMENS compares the outcomes of different scenarios in terms of economic benefits (e.g., land-use profitability), environmental impacts (e.g., carbon emissions, biodiversity loss), and social implications (e.g., employment, food security).
+    -   **Outcome:** The trade-off analysis provides stakeholders with a comprehensive understanding of the potential consequences of different decisions, enabling them to identify solutions that balance competing objectives.
 4.  [**Simulation and Scenario Development**](/sciendo.html): LUMENS allows for the development and simulation of various land-use scenarios, including 'business-as-usual' and alternative 'green' development pathways. This enables stakeholders to explore the potential consequences of different decisions and identify sustainable solutions.
-      -   **Purpose:** This component allows stakeholders to explore the potential consequences of different land-use decisions and identify sustainable solutions.
-      -   **Process:** LUMENS enables the development and simulation of various land-use scenarios, including 'business-as-usual' and alternative 'green' development pathways. The model incorporates spatial and temporal dynamics, as well as stakeholder inputs and preferences.
-      -   **Outcome:** The simulation and scenario development process provides stakeholders with a powerful tool for exploring the future of their landscape and identifying pathways that promote sustainable development and environmental conservation.
+    -   **Purpose:** This component allows stakeholders to explore the potential consequences of different land-use decisions and identify sustainable solutions.
+    -   **Process:** LUMENS enables the development and simulation of various land-use scenarios, including 'business-as-usual' and alternative 'green' development pathways. The model incorporates spatial and temporal dynamics, as well as stakeholder inputs and preferences.
+    -   **Outcome:** The simulation and scenario development process provides stakeholders with a powerful tool for exploring the future of their landscape and identifying pathways that promote sustainable development and environmental conservation.
 
 **In essence**, LUMENS acts as a bridge between science and society, facilitating informed and inclusive decision-making for sustainable landscape management. By integrating these key components, LUMENS empowers stakeholders to navigate the complexities of land-use planning and create a more resilient and equitable future for people and the planet.
 
 # Application of LUMENS
-- Developing Green Growth Plans: LUMENS can guide the formulation of comprehensive plans that promote sustainable economic growth while safeguarding environmental services.
-- Resolving Land-Use Conflicts: The tool can help identify and resolve conflicts arising from competing land uses and claims, fostering collaboration and consensus among stakeholders.
-- Enhancing Community Participation: LUMENS provides a platform for meaningful community engagement in land-use planning, ensuring that local knowledge and perspectives are incorporated into decision-making.
-- Informing Policy Decisions: The tool's scenario simulations and impact assessments can provide valuable insights for policymakers, enabling them to make evidence-based decisions that promote sustainable development.
-- Supporting Climate Change Mitigation and Adaptation: LUMENS can help identify land-use strategies that reduce greenhouse gas emissions and enhance resilience to climate change impacts.
-- Promoting Biodiversity Conservation: The tool can guide the identification and protection of critical habitats and ecological corridors, contributing to the conservation of biodiversity.
+
+-   Developing Green Growth Plans: LUMENS can guide the formulation of comprehensive plans that promote sustainable economic growth while safeguarding environmental services.
+-   Resolving Land-Use Conflicts: The tool can help identify and resolve conflicts arising from competing land uses and claims, fostering collaboration and consensus among stakeholders.
+-   Enhancing Community Participation: LUMENS provides a platform for meaningful community engagement in land-use planning, ensuring that local knowledge and perspectives are incorporated into decision-making.
+-   Informing Policy Decisions: The tool's scenario simulations and impact assessments can provide valuable insights for policymakers, enabling them to make evidence-based decisions that promote sustainable development.
+-   Supporting Climate Change Mitigation and Adaptation: LUMENS can help identify land-use strategies that reduce greenhouse gas emissions and enhance resilience to climate change impacts.
+-   Promoting Biodiversity Conservation: The tool can guide the identification and protection of critical habitats and ecological corridors, contributing to the conservation of biodiversity.
 
 # Read More About LUMENS
 
-1. Dewi, S., Ekadinata, A., Galudra, G., Agung, P., & Johana, F. (2011). LUWES: Land use planning for Low Emission Development Strategy. Bogor, Indonesia: World Agroforestry Centre - ICRAF, SEA Regional Office.
-2. Dewi, S., Ekadinata, A., Indiarto, D., Nugraha, A., & van Noordwijk, M. (2015). Negotiation support tools to enhance multifunctioning landscapes. In P. A. Minang, M. van Noordwijk, O. E. Freeman, C. Mbow, J. de Leeuw, & D. Catacutan (Eds.), Climate-Smart Landscapes: Multifunctionality In Practice. World Agroforestry Centre (ICRAF).
-3. Dewi, S., van Noordwijk, M., Ekadinata, A., & Pfund, J.-L. (2013). Protected areas within multifunctional landscapes: squeezing out intermediate land use intensities in the tropics? Land Use Policy, 30, 38–56. https://doi.org/10.1016/j.landusepol.2012.02.006
-4. Johana, F., & Agung, P. (2011). Planning for low-emissions development in Merangin District, Jambi province, Indonesia. Brief No 19. Bogor, Indonesia: World Agroforestry Centre - ICRAF, SEA Regional Office.
-5. ia, R., Do, H. T., Pham, V. T., Nguyen, T. Q., Dewi, S., Ekadinata, A., ... Nguyen, D. K. T. (2019). Green Growth Action Plan for Lam Dong Province for the Period of 2021 – 2030, Vision to 2050 (Technical Report). World Agroforestry (ICRAF).
+1.  Dewi, S., Ekadinata, A., Galudra, G., Agung, P., & Johana, F. (2011). LUWES: Land use planning for Low Emission Development Strategy. Bogor, Indonesia: World Agroforestry Centre - ICRAF, SEA Regional Office.
+2.  Dewi, S., Ekadinata, A., Indiarto, D., Nugraha, A., & van Noordwijk, M. (2015). Negotiation support tools to enhance multifunctioning landscapes. In P. A. Minang, M. van Noordwijk, O. E. Freeman, C. Mbow, J. de Leeuw, & D. Catacutan (Eds.), Climate-Smart Landscapes: Multifunctionality In Practice. World Agroforestry Centre (ICRAF).
+3.  Dewi, S., van Noordwijk, M., Ekadinata, A., & Pfund, J.-L. (2013). Protected areas within multifunctional landscapes: squeezing out intermediate land use intensities in the tropics? Land Use Policy, 30, 38–56. https://doi.org/10.1016/j.landusepol.2012.02.006
+4.  Johana, F., & Agung, P. (2011). Planning for low-emissions development in Merangin District, Jambi province, Indonesia. Brief No 19. Bogor, Indonesia: World Agroforestry Centre - ICRAF, SEA Regional Office.
+5.  ia, R., Do, H. T., Pham, V. T., Nguyen, T. Q., Dewi, S., Ekadinata, A., ... Nguyen, D. K. T. (2019). Green Growth Action Plan for Lam Dong Province for the Period of 2021 – 2030, Vision to 2050 (Technical Report). World Agroforestry (ICRAF).
