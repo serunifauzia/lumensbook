@@ -1,248 +1,135 @@
 # Profitability Analysis {#sec-profit}
 
 ---
-<<<<<<< HEAD
---- title: "Profitability Analysis" editor:    markdown:      wrap: sentence ---
-=======
-title: "Profitability"
+title: "Profitability Analysis"
 editor: 
   markdown: 
     wrap: sentence
->>>>>>> 75df2d1a8e94dce2a4df700bbe38692ed7dc0979
 ---
 
 ## 1. Description
 
-<<<<<<< HEAD
-The Profitability Analysis module helps user to calculate the economic benefit based on land-use change scenarios. The analysis focuses on assessing the **Net Present Value (NPV)**, **Opportunity Cost**, and **Carbon Emissions** associated with different land-use changes. This method evaluates the financial and environmental impacts of identify trade-offs between environment and economy.
-=======
-\[Concise overview of the module's function and purpose within LUMENS.
-Connect it to real-world planning challenges faced by policymakers.
-Example: *This module analyses land use/cover change trends, helping stakeholders understand historical and land use change patterns, informing xxx strategies.*\]
->>>>>>> 75df2d1a8e94dce2a4df700bbe38692ed7dc0979
+The Profitability Analysis module helps users calculate the economic benefits of land-use change scenarios.
+The analysis focuses on assessing **Net Present Value (NPV)**, **Opportunity Cost**, and **Carbon Emissions**.
+This method evaluates both the financial and environmental impacts, helping to identify trade-offs between economic development and environmental sustainability.
 
 ## 2. Usage
 
 ### 2.1 Workflow
 
-<<<<<<< HEAD
-To effectively assess the environmental and financial impacts of land-use changes, this approach integrates economic and ecological data, providing a comprehensive analysis that supports decision-making in sustainable land management.
+This module integrates economic and ecological data to assess the environmental and financial impacts of land-use changes, supporting sustainable land management decisions.
+The workflow consists of the following steps:
 
-The analysis workflow involves several key steps:
-
-1.  **NPV and Carbon Data Processing**: NPV and carbon data were combined to create a comprehensive lookup table.
-2.  **Land-Use Change Analysis**: The land-use change maps were processed to assess changes in NPV and carbon emissions.
-3.  **Opportunity Cost Calculation**: The opportunity cost table was built by evaluating the difference between carbon emissions and financial gains across different land uses.
-4.  **Visualization**: Maps were generated to visually represent the spatial distribution of NPV changes, carbon emissions, and opportunity costs. Additionally, an opportunity cost curve was plotted to illustrate the trade-off between financial gains and carbon emissions.
+1.  **NPV and Carbon Data Processing**: Combining NPV and carbon data into a lookup table.
+2.  **Land-Use Change Analysis**: Processing land-use change maps to assess NPV and carbon emission changes.
+3.  **Opportunity Cost Calculation**: Building an opportunity cost table by evaluating differences between carbon emissions and financial gains across land uses.
+4.  **Visualization**: Generating maps and plotting an opportunity cost curve to represent the trade-offs between financial gains and carbon emissions.
 
 ![](images/clipboard-1883092095.png)
 
-### 2.2 Step-by-step instructions
-
-By following the steps outlined below, users can process critical data, evaluate trade-offs between carbon emissions and financial returns, and visualize the outcomes in a way that informs strategic planning
+### 2.2 Step-by-step Instructions
 
 **Step 1: Uploading Land Cover Data**
 
-In this step, you will upload four different types of data required for the analysis. Follow these steps carefully to ensure successful data upload.
+In this step, you'll upload four datasets required for analysis.
 
-[**Upload Land Cover Map at T1**]{.underline}
+#### \[Upload Land Cover Map at T1\]
 
 ![](images/clipboard-2804689983.png)
 
-1.  **Click the "Browse" Button**\
-    In the "Land Cover Map at T1" section, click the "Browse" button.
+1.  **Click the "Browse" Button** in the "Land Cover Map at T1" section.
+2.  **Select your Land Cover Map (GeoTIFF format)** for **Time Period 1 (T1)**, representing land cover at the beginning of your analysis period.
+3.  **Ensure Proper Projection and Resolution**: Use **UTM projection** and ensure a resolution of **at least 100m x 100m**.
 
-2.  **Select Your Land Cover Map (GeoTIFF format)**\
-    Choose the land cover map file for **Time Period 1 (T1)** from your computer. This map represents the land cover at the beginning of your analysis period, for example, the first year.
-
-3.  **Ensure Proper Projection and Resolution**\
-    Verify that the map is projected in **UTM (Universal Transverse Mercator)** and has a resolution of at least **100m x 100m** for accurate spatial analysis.
-
-#### [**Upload Land Cover Map at T2**]{.underline}
+#### \[Upload Land Cover Map at T2\]
 
 ![](images/clipboard-3312463142.png)
 
-1.  **Click the "Browse" Button**\
-    Now, locate the "Land Cover Map at T2" section and click the "Browse" button.
+1.  **Click the "Browse" Button** in the "Land Cover Map at T2" section.
+2.  **Select your Land Cover Map (GeoTIFF format)** for **Time Period 2 (T2)**.
+3.  **Ensure Correct Projection and Resolution** as with T1.
 
-2.  **Select Your Land Cover Map for T2 (GeoTIFF format)**\
-    Choose the land cover map for **Time Period 2 (T2)** from your computer. This map represents the land cover at the end of the analysis period, for example, the last year.
-
-3.  **Ensure Correct Projection and Resolution**\
-    As with T1, make sure the map is projected to **UTM** and has a resolution of **100m x 100m**.
-
-#### [**Upload NPV Lookup Table**]{.underline}
+#### \[Upload NPV Lookup Table\]
 
 ![](images/clipboard-1622649468.png)
 
-1.  **Click the "Browse" Button**\
-    In the "NPV Lookup Table" section, click the "Browse" button.
+1.  **Click the "Browse" Button** in the "NPV Lookup Table" section.
+2.  **Select the NPV Lookup Table (CSV format)**, containing economic values per land use type.
 
-2.  **Select the NPV Lookup Table (CSV format)**\
-    Locate and select the NPV lookup table file from your computer. This table contains the **economic value (in IDR or USD)** per type of land use (measured in hectares).
-
-#### [**Upload QUES-C Table**]{.underline}
+#### \[Upload QUES-C Table\]
 
 ![](images/clipboard-690971442.png)
 
-1.  **Click the "Browse" Button**\
-    In the "QUES-C Table" section, click the "Browse" button.
-
-2.  **Select the QUES-C Table (CSV format)**\
-    Choose the QUES-C table file from your computer. This table includes the **carbon value (measured in CO2eq)** per land use type, calculated in hectares. The data comes from QUES-C, which is a tool used for carbon accounting.
+1.  **Click the "Browse" Button** in the "QUES-C Table" section.
+2.  **Select the QUES-C Table (CSV format)**, which includes carbon values for each land use type.
 
 #### **Step 2: Setting Analysis Parameters**
 
-Enter the year for each land use map time period marking the start and end years for your analysis. For example: 2005 for T1 and 2010 for T2.
-
-![](images/clipboard-2398645822.png)
-
-#### [Enter No Data information]{.underline}
-
-Fill in '0' in this tab.
-
-![](images/clipboard-2035359766.png)
-
-#### [Select Output Directory]{.underline}
-
-In this tab, you will select a folder to save the results. Click the "+" button to choose the folder.
-
-![](images/clipboard-2399439053.png)
+1.  **Set the years** for each land-use map to mark the start (T1) and end (T2) of your analysis.
+2.  **Enter 'No Data' Information** (use '0').
+3.  **Select Output Directory** where results will be saved.
 
 #### **Step 3: Running the Analysis**
 
-Once all the required data have been uploaded and the output directory has been selected, you can proceed to the next step in the analysis. Ensure that each data field is correctly completed before continuing.
-
-*The results will be displayed in the "Results" tab.*
+Once all data is uploaded and parameters are set, run the analysis.
+Results will appear in the "Results" tab.
 
 ![](images/clipboard-1043787845.png)
 
 ### 2.3 Tips
 
--   **Land Cover Maps (T1 and T2)**: These maps help analyze the change in land use between two specific periods, showing how land use has evolved over time.
-
-    Your data should look like this:
-
-    ![](images/clipboard-552962256.png)
-
--   **NPV Lookup Table**: This table provides the Net Present Value (NPV) of different land uses for economic valuation.
-
-    Your data should look like this:
-
-    ![](images/clipboard-1149751305.png)
-
--   **QUES-C Table**: This table helps in assessing the carbon emissions or sequestration potential of land uses, supporting environmental impact assessments.
-
-    Your data should look like this:
-=======
-\[Summarize the key steps involved in using the module, providing a roadmap for users.
-Example: *Users upload land cover maps for different time periods, select analysis parameters, and the module generates maps and statistics of land use change.*\]
-
-### 2.2 Step-by-step instructions
-
-**Step 1: Uploading Land Cover Data**
-
-\[Detailed instructions with screenshots.
-Example: - *Click the "Upload Raster" button in the "Data" tab.* - *Select your land cover map (GeoTIFF format) from your computer.* - *Ensure the map is projected to UTM and has a resolution of at least 100 m x 100 m* - *(Screenshot of the data upload interface)*\]
-
-**Step 2: Setting Analysis Parameters**
-
-\[Instructions for each parameter with explanations of their effect.
-Example: - *Time Period:* Select the start and end years for your analysis.
-- *Transition Matrix:* Choose whether to calculate a transition matrix showing land use changes between categories.
-- *(Screenshot of the parameter selection area)*\]
-
-**Step 3: Running the Analysis**
-
-\[Instructions on how to initiate the analysis and what to expect.
-Example: - *Click the "Run Analysis" button.* - *A progress bar will appear, indicating the analysis status.* - *Once complete, the results will be displayed in the "Results" tab.* - *(Screenshot of the "Run Analysis" button and progress bar)*\]
-
-### 2.3 Tips
-
--   \[Provide helpful hints or things to consider while using the module. Example:
-    -   *For large datasets, the analysis may take some time to complete.*
-    -   *Ensure that all input maps have the same extent and resolution.* \]
->>>>>>> 75df2d1a8e94dce2a4df700bbe38692ed7dc0979
+-   Ensure that all input maps have consistent projection and resolution for accurate analysis.
+-   Larger datasets may take longer to process, so plan accordingly.
 
 ## 3. Data Requirements
 
 ### 3.1 Input Data & Parameters
 
-| No  | Data Name               | Type               | Format  | Projection Requirements | Description                                          |
-|------------|------------|------------|------------|------------|------------|
-| 1\. | Land Cover Map (Time 1) | Categorical raster | GeoTIFF | UTM                     | A map classifying land use types for the start year. |
-| 2\. | Land Cover Map (Time 2) | Categorical raster | GeoTIFF | UTM                     | A map classifying land use types for the end year.   |
-<<<<<<< HEAD
-| 3\. | NPV Lookup Table        | Economic           | CSV     | \-                      | Net Present Value (NPV) of different land uses       |
-| 4\. | QUES-C Table            | Carbon             | CSV     | \-                      |                                                      |
-=======
-| ... | ...                     | ...                | ...     | ...                     | ...                                                  |
-
-\[Include rows for ALL required input data and parameters.\]
->>>>>>> 75df2d1a8e94dce2a4df700bbe38692ed7dc0979
+| No  | Data Name               | Type               | Format  | Projection Requirements | Description                               |
+|-----------|-----------|-----------|-----------|-----------|--------------------|
+| 1   | Land Cover Map (Time 1) | Categorical raster | GeoTIFF | UTM                     | Map of land use types for the start year. |
+| 2   | Land Cover Map (Time 2) | Categorical raster | GeoTIFF | UTM                     | Map of land use types for the end year.   |
+| 3   | NPV Lookup Table        | Economic           | CSV     | \-                      | NPV of different land uses.               |
+| 4   | QUES-C Table            | Carbon             | CSV     | \-                      | Carbon values (CO2eq) per land use type.  |
 
 ### 3.2 Example Datasets
 
-\[Provide links to sample datasets users can download and use for practice.\]
+\[Provide links to sample datasets users can download for practice.\]
 
 ### 3.3 Data Acquisition
 
-<<<<<<< HEAD
-\[Provide guidance on finding suitable data, linking to common sources if applicable. Example: - *Land cover maps can often be obtained from \[link to data source\].* - *For creating your own land cover maps from satellite imagery, consider using software such as \[link to software\].*\]
-=======
-\[Provide guidance on finding suitable data, linking to common sources if applicable.
-Example: - *Land cover maps can often be obtained from \[link to data source\].* - *For creating your own land cover maps from satellite imagery, consider using software such as \[link to software\].*\]
->>>>>>> 75df2d1a8e94dce2a4df700bbe38692ed7dc0979
+\[Guidance on finding suitable data and common sources.\]
 
 ## 4. Outputs
 
 ### 4.1 Output Files
 
-| File Name                          | Type   | Description                                                                      |
-<<<<<<< HEAD
-|-----------------|-----------------|--------------------------------------|
-=======
-|------------------------|------------------------|------------------------|
->>>>>>> 75df2d1a8e94dce2a4df700bbe38692ed7dc0979
-| `land_use_change_map_[SUFFIX].tif` | Raster | Map depicting changes in land use between the specified time periods.            |
-| `transition_matrix_[SUFFIX].csv`   | CSV    | Table showing the area of land that transitioned between each land use category. |
-| `report_[SUFFIX].html`             | HTML   | A report summarizing the analysis results with visualizations and tables.        |
-| ...                                | ...    | ...                                                                              |
-
-\[Include rows for ALL output files, including the report.\]
+| File Name                           | Type   | Description                                                               |
+|-----------------|--------------|------------------------------------------|
+| land_use_change_map\_\[SUFFIX\].tif | Raster | Map showing land use changes between specified time periods.              |
+| transition_matrix\_\[SUFFIX\].csv   | CSV    | Table of land use transitions between categories.                         |
+| report\_\[SUFFIX\].html             | HTML   | Report summarizing analysis results, including visualizations and tables. |
 
 ### 4.2 Report Interpretation
 
-<<<<<<< HEAD
-\[This section will guide users on understanding the content of the generated report.\] \[Provide specific examples of how to interpret findings from the report, addressing real-world planning concerns. Example: - *If the report shows a significant increase in deforestation within a protected area, policymakers could use this information to investigate the causes and strengthen enforcement efforts.* - *The transition matrix can help identify which land use types are most prone to conversion, allowing planners to target those areas with conservation or sustainable management practices.*\]
-=======
-\[This section will guide users on understanding the content of the generated report.\] \[Provide specific examples of how to interpret findings from the report, addressing real-world planning concerns.
-Example: - *If the report shows a significant increase in deforestation within a protected area, policymakers could use this information to investigate the causes and strengthen enforcement efforts.* - *The transition matrix can help identify which land use types are most prone to conversion, allowing planners to target those areas with conservation or sustainable management practices.*\]
->>>>>>> 75df2d1a8e94dce2a4df700bbe38692ed7dc0979
+This section provides examples on how to interpret results, such as identifying areas with significant land use changes and their implications for policy or management.
 
 ## 5. Theoretical Background
 
 ### 5.1 Model Description
 
-<<<<<<< HEAD
-\[Explain the underlying model or algorithm conceptually, using diagrams or flowcharts. Avoid code. Example: - *This module uses a simple change detection method to identify pixels that have changed land use category between the input maps.* - *(Include a diagram showing how change detection works)*\]
-=======
-\[Explain the underlying model or algorithm conceptually, using diagrams or flowcharts.
-Avoid code.
-Example: - *This module uses a simple change detection method to identify pixels that have changed land use category between the input maps.* - *(Include a diagram showing how change detection works)*\]
->>>>>>> 75df2d1a8e94dce2a4df700bbe38692ed7dc0979
+Explain the underlying model conceptually using diagrams or flowcharts.
+For example, this module uses change detection methods to identify pixels that have changed land-use categories between the input maps.
 
 ### 5.2 Key Assumptions
 
--   \[List the key assumptions made by the model. Example:
-    -   *The land cover maps accurately represent land use categories.*
-    -   *Land use changes occur linearly over the analysis period.*\]
+-   Land cover maps accurately represent land use categories.
+-   Land use changes occur linearly over the analysis period.
 
 ### 5.3 Limitations
 
--   \[Explain the model's limitations and potential sources of error/uncertainty. Example:
-    -   *This module does not account for gradual land use changes or changes that occur within a single land use category.*
-    -   *Accuracy is limited by the quality and resolution of the input land cover maps.*\]
+-   Does not account for gradual land use changes within a single land use category.
+-   Analysis accuracy is limited by the quality and resolution of the input data.
 
 ## References
 
