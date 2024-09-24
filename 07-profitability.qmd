@@ -1,17 +1,31 @@
 # Profitability Analysis {#sec-profit}
 
 ---
+<<<<<<< HEAD
 --- title: "Profitability Analysis" editor:    markdown:      wrap: sentence ---
+=======
+title: "Profitability"
+editor: 
+  markdown: 
+    wrap: sentence
+>>>>>>> 75df2d1a8e94dce2a4df700bbe38692ed7dc0979
 ---
 
 ## 1. Description
 
+<<<<<<< HEAD
 The Profitability Analysis module helps user to calculate the economic benefit based on land-use change scenarios. The analysis focuses on assessing the **Net Present Value (NPV)**, **Opportunity Cost**, and **Carbon Emissions** associated with different land-use changes. This method evaluates the financial and environmental impacts of identify trade-offs between environment and economy.
+=======
+\[Concise overview of the module's function and purpose within LUMENS.
+Connect it to real-world planning challenges faced by policymakers.
+Example: *This module analyses land use/cover change trends, helping stakeholders understand historical and land use change patterns, informing xxx strategies.*\]
+>>>>>>> 75df2d1a8e94dce2a4df700bbe38692ed7dc0979
 
 ## 2. Usage
 
 ### 2.1 Workflow
 
+<<<<<<< HEAD
 To effectively assess the environmental and financial impacts of land-use changes, this approach integrates economic and ecological data, providing a comprehensive analysis that supports decision-making in sustainable land management.
 
 The analysis workflow involves several key steps:
@@ -120,6 +134,35 @@ Once all the required data have been uploaded and the output directory has been 
 -   **QUES-C Table**: This table helps in assessing the carbon emissions or sequestration potential of land uses, supporting environmental impact assessments.
 
     Your data should look like this:
+=======
+\[Summarize the key steps involved in using the module, providing a roadmap for users.
+Example: *Users upload land cover maps for different time periods, select analysis parameters, and the module generates maps and statistics of land use change.*\]
+
+### 2.2 Step-by-step instructions
+
+**Step 1: Uploading Land Cover Data**
+
+\[Detailed instructions with screenshots.
+Example: - *Click the "Upload Raster" button in the "Data" tab.* - *Select your land cover map (GeoTIFF format) from your computer.* - *Ensure the map is projected to UTM and has a resolution of at least 100 m x 100 m* - *(Screenshot of the data upload interface)*\]
+
+**Step 2: Setting Analysis Parameters**
+
+\[Instructions for each parameter with explanations of their effect.
+Example: - *Time Period:* Select the start and end years for your analysis.
+- *Transition Matrix:* Choose whether to calculate a transition matrix showing land use changes between categories.
+- *(Screenshot of the parameter selection area)*\]
+
+**Step 3: Running the Analysis**
+
+\[Instructions on how to initiate the analysis and what to expect.
+Example: - *Click the "Run Analysis" button.* - *A progress bar will appear, indicating the analysis status.* - *Once complete, the results will be displayed in the "Results" tab.* - *(Screenshot of the "Run Analysis" button and progress bar)*\]
+
+### 2.3 Tips
+
+-   \[Provide helpful hints or things to consider while using the module. Example:
+    -   *For large datasets, the analysis may take some time to complete.*
+    -   *Ensure that all input maps have the same extent and resolution.* \]
+>>>>>>> 75df2d1a8e94dce2a4df700bbe38692ed7dc0979
 
 ## 3. Data Requirements
 
@@ -129,8 +172,14 @@ Once all the required data have been uploaded and the output directory has been 
 |------------|------------|------------|------------|------------|------------|
 | 1\. | Land Cover Map (Time 1) | Categorical raster | GeoTIFF | UTM                     | A map classifying land use types for the start year. |
 | 2\. | Land Cover Map (Time 2) | Categorical raster | GeoTIFF | UTM                     | A map classifying land use types for the end year.   |
+<<<<<<< HEAD
 | 3\. | NPV Lookup Table        | Economic           | CSV     | \-                      | Net Present Value (NPV) of different land uses       |
 | 4\. | QUES-C Table            | Carbon             | CSV     | \-                      |                                                      |
+=======
+| ... | ...                     | ...                | ...     | ...                     | ...                                                  |
+
+\[Include rows for ALL required input data and parameters.\]
+>>>>>>> 75df2d1a8e94dce2a4df700bbe38692ed7dc0979
 
 ### 3.2 Example Datasets
 
@@ -138,14 +187,23 @@ Once all the required data have been uploaded and the output directory has been 
 
 ### 3.3 Data Acquisition
 
+<<<<<<< HEAD
 \[Provide guidance on finding suitable data, linking to common sources if applicable. Example: - *Land cover maps can often be obtained from \[link to data source\].* - *For creating your own land cover maps from satellite imagery, consider using software such as \[link to software\].*\]
+=======
+\[Provide guidance on finding suitable data, linking to common sources if applicable.
+Example: - *Land cover maps can often be obtained from \[link to data source\].* - *For creating your own land cover maps from satellite imagery, consider using software such as \[link to software\].*\]
+>>>>>>> 75df2d1a8e94dce2a4df700bbe38692ed7dc0979
 
 ## 4. Outputs
 
 ### 4.1 Output Files
 
 | File Name                          | Type   | Description                                                                      |
+<<<<<<< HEAD
 |-----------------|-----------------|--------------------------------------|
+=======
+|------------------------|------------------------|------------------------|
+>>>>>>> 75df2d1a8e94dce2a4df700bbe38692ed7dc0979
 | `land_use_change_map_[SUFFIX].tif` | Raster | Map depicting changes in land use between the specified time periods.            |
 | `transition_matrix_[SUFFIX].csv`   | CSV    | Table showing the area of land that transitioned between each land use category. |
 | `report_[SUFFIX].html`             | HTML   | A report summarizing the analysis results with visualizations and tables.        |
@@ -155,13 +213,24 @@ Once all the required data have been uploaded and the output directory has been 
 
 ### 4.2 Report Interpretation
 
+<<<<<<< HEAD
 \[This section will guide users on understanding the content of the generated report.\] \[Provide specific examples of how to interpret findings from the report, addressing real-world planning concerns. Example: - *If the report shows a significant increase in deforestation within a protected area, policymakers could use this information to investigate the causes and strengthen enforcement efforts.* - *The transition matrix can help identify which land use types are most prone to conversion, allowing planners to target those areas with conservation or sustainable management practices.*\]
+=======
+\[This section will guide users on understanding the content of the generated report.\] \[Provide specific examples of how to interpret findings from the report, addressing real-world planning concerns.
+Example: - *If the report shows a significant increase in deforestation within a protected area, policymakers could use this information to investigate the causes and strengthen enforcement efforts.* - *The transition matrix can help identify which land use types are most prone to conversion, allowing planners to target those areas with conservation or sustainable management practices.*\]
+>>>>>>> 75df2d1a8e94dce2a4df700bbe38692ed7dc0979
 
 ## 5. Theoretical Background
 
 ### 5.1 Model Description
 
+<<<<<<< HEAD
 \[Explain the underlying model or algorithm conceptually, using diagrams or flowcharts. Avoid code. Example: - *This module uses a simple change detection method to identify pixels that have changed land use category between the input maps.* - *(Include a diagram showing how change detection works)*\]
+=======
+\[Explain the underlying model or algorithm conceptually, using diagrams or flowcharts.
+Avoid code.
+Example: - *This module uses a simple change detection method to identify pixels that have changed land use category between the input maps.* - *(Include a diagram showing how change detection works)*\]
+>>>>>>> 75df2d1a8e94dce2a4df700bbe38692ed7dc0979
 
 ### 5.2 Key Assumptions
 
