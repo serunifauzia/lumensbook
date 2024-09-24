@@ -1,1 +1,109 @@
 # Profitability Analysis {#sec-profit}
+
+---
+title: "Profitability"
+editor: 
+  markdown: 
+    wrap: sentence
+---
+
+## 1. Description
+
+\[Concise overview of the module's function and purpose within LUMENS.
+Connect it to real-world planning challenges faced by policymakers.
+Example: *This module analyses land use/cover change trends, helping stakeholders understand historical and land use change patterns, informing xxx strategies.*\]
+
+## 2. Usage
+
+### 2.1 Workflow
+
+\[Summarize the key steps involved in using the module, providing a roadmap for users.
+Example: *Users upload land cover maps for different time periods, select analysis parameters, and the module generates maps and statistics of land use change.*\]
+
+### 2.2 Step-by-step instructions
+
+**Step 1: Uploading Land Cover Data**
+
+\[Detailed instructions with screenshots.
+Example: - *Click the "Upload Raster" button in the "Data" tab.* - *Select your land cover map (GeoTIFF format) from your computer.* - *Ensure the map is projected to UTM and has a resolution of at least 100 m x 100 m* - *(Screenshot of the data upload interface)*\]
+
+**Step 2: Setting Analysis Parameters**
+
+\[Instructions for each parameter with explanations of their effect.
+Example: - *Time Period:* Select the start and end years for your analysis.
+- *Transition Matrix:* Choose whether to calculate a transition matrix showing land use changes between categories.
+- *(Screenshot of the parameter selection area)*\]
+
+**Step 3: Running the Analysis**
+
+\[Instructions on how to initiate the analysis and what to expect.
+Example: - *Click the "Run Analysis" button.* - *A progress bar will appear, indicating the analysis status.* - *Once complete, the results will be displayed in the "Results" tab.* - *(Screenshot of the "Run Analysis" button and progress bar)*\]
+
+### 2.3 Tips
+
+-   \[Provide helpful hints or things to consider while using the module. Example:
+    -   *For large datasets, the analysis may take some time to complete.*
+    -   *Ensure that all input maps have the same extent and resolution.* \]
+
+## 3. Data Requirements
+
+### 3.1 Input Data & Parameters
+
+| No  | Data Name               | Type               | Format  | Projection Requirements | Description                                          |
+|------------|------------|------------|------------|------------|------------|
+| 1\. | Land Cover Map (Time 1) | Categorical raster | GeoTIFF | UTM                     | A map classifying land use types for the start year. |
+| 2\. | Land Cover Map (Time 2) | Categorical raster | GeoTIFF | UTM                     | A map classifying land use types for the end year.   |
+| ... | ...                     | ...                | ...     | ...                     | ...                                                  |
+
+\[Include rows for ALL required input data and parameters.\]
+
+### 3.2 Example Datasets
+
+\[Provide links to sample datasets users can download and use for practice.\]
+
+### 3.3 Data Acquisition
+
+\[Provide guidance on finding suitable data, linking to common sources if applicable.
+Example: - *Land cover maps can often be obtained from \[link to data source\].* - *For creating your own land cover maps from satellite imagery, consider using software such as \[link to software\].*\]
+
+## 4. Outputs
+
+### 4.1 Output Files
+
+| File Name                          | Type   | Description                                                                      |
+|------------------------|------------------------|------------------------|
+| `land_use_change_map_[SUFFIX].tif` | Raster | Map depicting changes in land use between the specified time periods.            |
+| `transition_matrix_[SUFFIX].csv`   | CSV    | Table showing the area of land that transitioned between each land use category. |
+| `report_[SUFFIX].html`             | HTML   | A report summarizing the analysis results with visualizations and tables.        |
+| ...                                | ...    | ...                                                                              |
+
+\[Include rows for ALL output files, including the report.\]
+
+### 4.2 Report Interpretation
+
+\[This section will guide users on understanding the content of the generated report.\] \[Provide specific examples of how to interpret findings from the report, addressing real-world planning concerns.
+Example: - *If the report shows a significant increase in deforestation within a protected area, policymakers could use this information to investigate the causes and strengthen enforcement efforts.* - *The transition matrix can help identify which land use types are most prone to conversion, allowing planners to target those areas with conservation or sustainable management practices.*\]
+
+## 5. Theoretical Background
+
+### 5.1 Model Description
+
+\[Explain the underlying model or algorithm conceptually, using diagrams or flowcharts.
+Avoid code.
+Example: - *This module uses a simple change detection method to identify pixels that have changed land use category between the input maps.* - *(Include a diagram showing how change detection works)*\]
+
+### 5.2 Key Assumptions
+
+-   \[List the key assumptions made by the model. Example:
+    -   *The land cover maps accurately represent land use categories.*
+    -   *Land use changes occur linearly over the analysis period.*\]
+
+### 5.3 Limitations
+
+-   \[Explain the model's limitations and potential sources of error/uncertainty. Example:
+    -   *This module does not account for gradual land use changes or changes that occur within a single land use category.*
+    -   *Accuracy is limited by the quality and resolution of the input land cover maps.*\]
+
+## References
+
+\[Use BibTeX to cite relevant scientific literature.\]
