@@ -74,6 +74,72 @@
     ]
   },
   {
+    "objectID": "07-profitability.html",
+    "href": "07-profitability.html",
+    "title": "7  Profitability Analysis",
+    "section": "",
+    "text": "7.1 1. Description\n[Concise overview of the module’s function and purpose within LUMENS. Connect it to real-world planning challenges faced by policymakers. Example: This module analyses land use/cover change trends, helping stakeholders understand historical and land use change patterns, informing xxx strategies.]",
+    "crumbs": [
+      "Trade-Off Analysis (TA)",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Profitability</span>"
+    ]
+  },
+  {
+    "objectID": "07-profitability.html#usage",
+    "href": "07-profitability.html#usage",
+    "title": "7  Profitability Analysis",
+    "section": "7.2 2. Usage",
+    "text": "7.2 2. Usage\n\n7.2.1 2.1 Workflow\n[Summarize the key steps involved in using the module, providing a roadmap for users. Example: Users upload land cover maps for different time periods, select analysis parameters, and the module generates maps and statistics of land use change.]\n\n\n7.2.2 2.2 Step-by-step instructions\nStep 1: Uploading Land Cover Data\n[Detailed instructions with screenshots. Example: - Click the “Upload Raster” button in the “Data” tab. - Select your land cover map (GeoTIFF format) from your computer. - Ensure the map is projected to UTM and has a resolution of at least 100 m x 100 m - (Screenshot of the data upload interface)]\nStep 2: Setting Analysis Parameters\n[Instructions for each parameter with explanations of their effect. Example: - Time Period: Select the start and end years for your analysis. - Transition Matrix: Choose whether to calculate a transition matrix showing land use changes between categories. - (Screenshot of the parameter selection area)]\nStep 3: Running the Analysis\n[Instructions on how to initiate the analysis and what to expect. Example: - Click the “Run Analysis” button. - A progress bar will appear, indicating the analysis status. - Once complete, the results will be displayed in the “Results” tab. - (Screenshot of the “Run Analysis” button and progress bar)]\n\n\n7.2.3 2.3 Tips\n\n[Provide helpful hints or things to consider while using the module. Example:\n\nFor large datasets, the analysis may take some time to complete.\nEnsure that all input maps have the same extent and resolution. ]",
+    "crumbs": [
+      "Trade-Off Analysis (TA)",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Profitability</span>"
+    ]
+  },
+  {
+    "objectID": "07-profitability.html#data-requirements",
+    "href": "07-profitability.html#data-requirements",
+    "title": "7  Profitability Analysis",
+    "section": "7.3 3. Data Requirements",
+    "text": "7.3 3. Data Requirements\n\n7.3.1 3.1 Input Data & Parameters\n\n\n\n\n\n\n\n\n\n\n\nNo\nData Name\nType\nFormat\nProjection Requirements\nDescription\n\n\n\n\n1.\nLand Cover Map (Time 1)\nCategorical raster\nGeoTIFF\nUTM\nA map classifying land use types for the start year.\n\n\n2.\nLand Cover Map (Time 2)\nCategorical raster\nGeoTIFF\nUTM\nA map classifying land use types for the end year.\n\n\n…\n…\n…\n…\n…\n…\n\n\n\n[Include rows for ALL required input data and parameters.]\n\n\n7.3.2 3.2 Example Datasets\n[Provide links to sample datasets users can download and use for practice.]\n\n\n7.3.3 3.3 Data Acquisition\n[Provide guidance on finding suitable data, linking to common sources if applicable. Example: - Land cover maps can often be obtained from [link to data source]. - For creating your own land cover maps from satellite imagery, consider using software such as [link to software].]",
+    "crumbs": [
+      "Trade-Off Analysis (TA)",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Profitability</span>"
+    ]
+  },
+  {
+    "objectID": "07-profitability.html#outputs",
+    "href": "07-profitability.html#outputs",
+    "title": "7  Profitability Analysis",
+    "section": "7.4 4. Outputs",
+    "text": "7.4 4. Outputs\n\n7.4.1 4.1 Output Files\n\n\n\n\n\n\n\n\nFile Name\nType\nDescription\n\n\n\n\nland_use_change_map_[SUFFIX].tif\nRaster\nMap depicting changes in land use between the specified time periods.\n\n\ntransition_matrix_[SUFFIX].csv\nCSV\nTable showing the area of land that transitioned between each land use category.\n\n\nreport_[SUFFIX].html\nHTML\nA report summarizing the analysis results with visualizations and tables.\n\n\n…\n…\n…\n\n\n\n[Include rows for ALL output files, including the report.]\n\n\n7.4.2 4.2 Report Interpretation\n[This section will guide users on understanding the content of the generated report.] [Provide specific examples of how to interpret findings from the report, addressing real-world planning concerns. Example: - If the report shows a significant increase in deforestation within a protected area, policymakers could use this information to investigate the causes and strengthen enforcement efforts. - The transition matrix can help identify which land use types are most prone to conversion, allowing planners to target those areas with conservation or sustainable management practices.]",
+    "crumbs": [
+      "Trade-Off Analysis (TA)",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Profitability</span>"
+    ]
+  },
+  {
+    "objectID": "07-profitability.html#theoretical-background",
+    "href": "07-profitability.html#theoretical-background",
+    "title": "7  Profitability Analysis",
+    "section": "7.5 5. Theoretical Background",
+    "text": "7.5 5. Theoretical Background\n\n7.5.1 5.1 Model Description\n[Explain the underlying model or algorithm conceptually, using diagrams or flowcharts. Avoid code. Example: - This module uses a simple change detection method to identify pixels that have changed land use category between the input maps. - (Include a diagram showing how change detection works)]\n\n\n7.5.2 5.2 Key Assumptions\n\n[List the key assumptions made by the model. Example:\n\nThe land cover maps accurately represent land use categories.\nLand use changes occur linearly over the analysis period.]\n\n\n\n\n7.5.3 5.3 Limitations\n\n[Explain the model’s limitations and potential sources of error/uncertainty. Example:\n\nThis module does not account for gradual land use changes or changes that occur within a single land use category.\nAccuracy is limited by the quality and resolution of the input land cover maps.]",
+    "crumbs": [
+      "Trade-Off Analysis (TA)",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Profitability</span>"
+    ]
+  },
+  {
+    "objectID": "07-profitability.html#references",
+    "href": "07-profitability.html#references",
+    "title": "7  Profitability Analysis",
+    "section": "7.6 References",
+    "text": "7.6 References\n[Use BibTeX to cite relevant scientific literature.]",
+    "crumbs": [
+      "Trade-Off Analysis (TA)",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Profitability</span>"
+    ]
+  },
+  {
     "objectID": "summary.html",
     "href": "summary.html",
     "title": "Summary",
