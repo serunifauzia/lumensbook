@@ -73,7 +73,7 @@ In this step, you'll upload four data sets required for analysis.
 ### 3.1 Input Data & Parameters
 
 | No   | Data Name              | Type               | Format  | Projection Requirements | Description                                                                                                                                         |
-|--------|------------|------------|------------|------------|-------------------|
+|------|------------------------|--------------------|---------|-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1\.  | Sector                 | Categorical        | CSV     | N/A                     | Economic sectors such as agriculture, industry, or services.                                                                                        |
 | 2\.  | Intermediate Demand    | Numerical          | CSV     | N/A                     | The purchase of a commodity by domestic industries as an input to production, excluding capital investment.                                         |
 | 3\.  | Final Demand Component | Numerical          | CSV     | N/A                     | The total demand for economic output in all sectors across the region.                                                                              |
@@ -102,7 +102,7 @@ In this step, you'll upload four data sets required for analysis.
 ### 4.1 Output Files
 
 | File Name                          | Type   | Description                                                                      |
-|------------------------|------------------------|------------------------|
+|------------------------------------|--------|----------------------------------------------------------------------------------|
 | `land_use_change_map_[SUFFIX].tif` | Raster | Map depicting changes in land use between the specified time periods.            |
 | `transition_matrix_[SUFFIX].csv`   | CSV    | Table showing the area of land that transitioned between each land use category. |
 | `report_[SUFFIX].html`             | HTML   | A report summarizing the analysis results with visualizations and tables.        |

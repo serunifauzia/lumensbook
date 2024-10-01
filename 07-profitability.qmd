@@ -106,11 +106,11 @@ Results will appear in the "Results" tab.
 ### 3.1 Input Data & Parameters
 
 | No  | Data Name               | Type               | Format  | Projection Requirements                             | Description                               |
-|------------|------------|------------|------------|------------|-------------|
+|-----------|-----------|-----------|-----------|-----------------|-------------|
 | 1   | Land Cover Map (Time 1) | Categorical raster | GeoTIFF | UTM                                                 | Map of land use types for the start year. |
 | 2   | Land Cover Map (Time 2) | Categorical raster | GeoTIFF | UTM                                                 | Map of land use types for the end year.   |
 | 3   | NPV Lookup Table        | Numerical          | CSV     | Revenue stream and cost structure per land use type | NPV of different land uses.               |
-| 4   | QUES-C Table            | Numerical          | CSV     | Carbon stocks, sequestration rates                  | Carbon values (CO2eq) per land use type.  |
+| 4   | QUES-C Database         | Numerical          | CSV     | Carbon stocks, sequestration rates                  | Carbon values (CO2eq) per land use type.  |
 
 ### 3.2 Example Datasets
 
@@ -127,7 +127,7 @@ Results will appear in the "Results" tab.
 ### 4.1 Output Files
 
 | File Name                           | Type   | Description                                                               |
-|-----------------|-----------------|---------------------------------------|
+|------------------|--------------|----------------------------------------|
 | land_use_change_map\_\[SUFFIX\].tif | Raster | Map showing land use changes between specified time periods.              |
 | transition_matrix\_\[SUFFIX\].csv   | CSV    | Table of land use transitions between categories.                         |
 | report\_\[SUFFIX\].html             | HTML   | Report summarizing analysis results, including visualizations and tables. |
@@ -137,7 +137,7 @@ Results will appear in the "Results" tab.
 This section presents the results of the profitability analysis, focusing on key insights derived from the **opportunity cost table**, **opportunity cost curve**, **Net Present Value (NPV) map per land use type**, and their implications for decision-making.
 The results highlight land-use efficiency, economic returns, and trade-offs, providing a foundation for policy formulation and land management strategies.
 
-[Opportunity Cost Table]{.underline}
+1.  **Opportunity Cost Table**
 
 ![](images/clipboard-3615464681.png)
 
@@ -152,7 +152,7 @@ The table shows that:
 From the table, it’s evident that policymakers should prioritize land uses that balance economic returns with environmental sustainability.
 For example, lands with high opportunity costs should be earmarked for conservation or low-impact uses, rather than agriculture or urban expansion.
 
-[Opportunity Cost Curve]{.underline}
+2.  **Opportunity Cost Curve**
 
 ![](images/clipboard-226560744.png)
 
@@ -189,10 +189,8 @@ Key points of the curve
 
 -   **Long-Term Value:**\
     At the end of the time horizon, the value shows the total profitability of the project.
-    If the OpCost remains positive, the project is expected to be profitable by the end of the time period.
+    If the Opportunity Cost remains positive, the project is expected to be profitable by the end of the time period.
     If the curve dips back into negative territory, it could signal declining profitability or unsustainable project dynamics over the long term.
-
-[NPV Map]{.underline}
 
 ## 5. Theoretical Background
 

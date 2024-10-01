@@ -49,7 +49,7 @@ In this step, you'll upload two data sets required for analysis: Land Requiremen
 ### 3.1 Input Data & Parameters
 
 | No  | Data Name                 | Type      | Format | Projection Requirements | Description                                                                                                                                                          |
-|------------|------------|------------|------------|------------|---------------|
+|--------|--------------------|--------------|-------------|--------|------------------------------------|
 | 1\. | Land Requirement Database | Vector    | R data | N/A                     | Structured data that provides detailed information on the amount and types of land needed to support various economic activities, sectors, or development scenarios. |
 | 2\. | Sciendo Database          | Numerical | CSV    | N/A                     | Simulation output for alternative scenario.                                                                                                                          |
 
@@ -59,7 +59,7 @@ In this step, you'll upload two data sets required for analysis: Land Requiremen
 
 \[Example data sets can be accessed in [link]{.underline}.\]
 
-![](images/clipboard-1234965977.png)
+![](images/clipboard-3839316557.png)
 
 ### 3.3 Data Acquisition
 
@@ -70,7 +70,7 @@ In this step, you'll upload two data sets required for analysis: Land Requiremen
 ### 4.1 Output Files
 
 | File Name                          | Type   | Description                                                                      |
-|------------------------|------------------------|------------------------|
+|-----------------|--------------|------------------------------------------|
 | `land_use_change_map_[SUFFIX].tif` | Raster | Map depicting changes in land use between the specified time periods.            |
 | `transition_matrix_[SUFFIX].csv`   | CSV    | Table showing the area of land that transitioned between each land use category. |
 | `report_[SUFFIX].html`             | HTML   | A report summarizing the analysis results with visualizations and tables.        |
